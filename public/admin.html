@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Admin panel — Kitobxon</title>
+  <meta name="theme-color" content="#b8521b" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/" class="logo"><span class="logo__icon">📚</span><span class="logo__text">Kitob<strong>xon</strong> · Admin</span></a>
+      <a href="/" class="cart-btn">← Do'konga qaytish</a>
+    </div>
+  </header>
+
+  <!-- LOGIN -->
+  <div class="admin-login" id="loginBox">
+    <div class="admin-login__card">
+      <h2>🔐 Admin kirish</h2>
+      <p>Davom etish uchun parolni kiriting</p>
+      <form id="loginForm">
+        <input type="password" id="loginPass" placeholder="Parol" autocomplete="current-password" />
+        <button type="submit" class="btn btn--primary btn--block">Kirish</button>
+        <p class="order-msg order-msg--err" id="loginMsg"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- PANEL -->
+  <main class="container admin-panel" id="panel" hidden>
+    <section class="admin-card">
+      <h2 class="section-title">➕ Yangi kitob qo'shish</h2>
+      <form id="addForm" class="admin-form">
+        <label>Kitob nomi *<input name="title" required placeholder="Masalan: Mehrobdan chayon" /></label>
+        <label>Muallif<input name="author" placeholder="Masalan: Abdulla Qodiriy" /></label>
+        <label>Narxi (so'm) *<input name="price" type="number" min="0" required placeholder="65000" /></label>
+        <label>Kategoriya *
+          <select name="cat" required>
+            <option value="comics">🦸 Comics</option>
+            <option value="badiiy">📖 Badiiy</option>
+            <option value="trend">🔥 Trend kitoblar</option>
+            <option value="bolalar">🧸 Bolalar uchun</option>
+          </select>
+        </label>
+        <label>Kitob rasmi (ixtiyoriy)<input name="image" type="file" accept="image/*" id="imageInput" /></label>
+        <label>Emoji (rasm bo'lmasa)<input name="emoji" placeholder="📕" maxlength="4" /></label>
+        <label>Rang (rasm bo'lmasa fon)<input name="color" type="color" value="#b8521b" /></label>
+        <button type="submit" class="btn btn--primary">Qo'shish</button>
+        <p class="order-msg" id="addMsg"></p>
+      </form>
+    </section>
+
+    <section class="admin-card">
+      <h2 class="section-title">📚 Mavjud kitoblar (<span id="count">0</span>)</h2>
+      <div id="adminList" class="admin-list"></div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

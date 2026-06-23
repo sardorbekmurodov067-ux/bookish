@@ -1,0 +1,6 @@
+{
+  "telegramBotToken": "YOUR_TELEGRAM_BOT_TOKEN",
+  "telegramChatId": "YOUR_TELEGRAM_CHAT_ID",
+  "adminPassword": "CHANGE_ME",
+  "port": 3000
+}

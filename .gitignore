@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Secrets & config
+config.json
+
+# Data (orders, etc.)
+data/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

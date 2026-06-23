@@ -1,0 +1,13 @@
+{
+  "name": "Kitobxon — Onlayn kitob do'koni",
+  "short_name": "Kitobxon",
+  "description": "Comics, badiiy, trend va bolalar kitoblari",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f5f0",
+  "theme_color": "#b8521b",
+  "lang": "uz",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

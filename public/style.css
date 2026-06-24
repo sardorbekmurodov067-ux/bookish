@@ -54,7 +54,8 @@ body {
   white-space: nowrap;
 }
 .logo__icon { font-size: 26px; }
-.logo__text strong { color: var(--brand); }
+.logo__text { color: #16a34a; }
+.logo__text strong { color: #e11d2a; }
 
 .search {
   flex: 1;

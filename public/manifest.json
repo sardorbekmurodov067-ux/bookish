@@ -1,6 +1,6 @@
 {
-  "name": "Kitobxon — Onlayn kitob do'koni",
-  "short_name": "Kitobxon",
+  "name": "Bookish — Onlayn kitob do'koni",
+  "short_name": "Bookish",
   "description": "Comics, badiiy, trend va bolalar kitoblari",
   "start_url": "/",
   "display": "standalone",

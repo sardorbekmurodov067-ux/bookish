@@ -54,6 +54,7 @@ body {
   white-space: nowrap;
 }
 .logo__icon { font-size: 26px; }
+.logo__img { height: 34px; display: block; }
 .logo__text { color: #16a34a; }
 .logo__text strong { color: #e11d2a; }
 

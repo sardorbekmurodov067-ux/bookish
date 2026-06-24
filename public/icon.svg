@@ -1,7 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="96" fill="#b8521b"/>
-  <g transform="translate(256 268)">
-    <text x="0" y="0" font-size="240" text-anchor="middle" dominant-baseline="central">📚</text>
+  <rect width="512" height="512" rx="96" fill="#f7f5f0"/>
+  <!-- Open book -->
+  <g transform="translate(256 200)">
+    <path d="M0 -60 C-40 -90 -100 -90 -140 -60 L-140 70 C-100 40 -40 40 0 75 Z" fill="#e11d2a"/>
+    <path d="M0 -60 C40 -90 100 -90 140 -60 L140 70 C100 40 40 40 0 75 Z" fill="#16a34a"/>
+    <rect x="-9" y="-60" width="18" height="135" rx="9" fill="#7a3a12"/>
+    <path d="M-115 -35 C-85 -52 -45 -52 -20 -35 M-115 0 C-85 -17 -45 -17 -20 0 M-115 35 C-85 18 -45 18 -20 35" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+    <path d="M20 -35 C45 -52 85 -52 115 -35 M20 0 C45 -17 85 -17 115 0 M20 35 C45 18 85 18 115 35" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
   </g>
-  <text x="256" y="440" font-size="64" font-family="Segoe UI, sans-serif" font-weight="700" fill="#fff" text-anchor="middle">Bookish</text>
+  <!-- Wordmark -->
+  <text x="256" y="430" font-size="92" font-family="Segoe UI, system-ui, sans-serif" font-weight="800" text-anchor="middle" letter-spacing="-2">
+    <tspan fill="#e11d2a">Book</tspan><tspan fill="#16a34a">ish</tspan>
+  </text>
 </svg>
